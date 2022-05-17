@@ -7,7 +7,7 @@ let price = 100
 let vat =70
 console.log(price * (vat/100));
 */
-let money=350000; 
+/*let money=350000; 
 let tax='free bro';
 if(money>=150000){
 
@@ -41,5 +41,18 @@ else if(money>5000000){
     
 }else{
     'free bro';
+}*/
+let number = 5;
+let sum = 1;
+for(let i=1; i<= number; i++){
+    sum *= i; 
 }
-console.log(tax);
+console.log(sum);
+
+n=5;
+let sum_while=1;
+while(n>0){
+    sum_while  *= n;
+    n--;
+}
+console.log(sum_while);
