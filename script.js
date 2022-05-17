@@ -7,24 +7,39 @@ let price = 100
 let vat =70
 console.log(price * (vat/100));
 */
-let score = 70
-let grade
-if(score >= 80){
-    grade = 'A';
-}else if(score>=75){
-    grade = 'B+';
-}else if(score>=70){
-    grade = 'B';
-}else if(score>=65){
-    grade = 'C+';
-}else if(score>=60){
-    grade = 'C';
-}else if(score>=55){
-    grade = 'D+';
+let money=350000; 
+let tax='free bro';
+if(money>=150000){
+
+    tax=(money-150000)*(0.05);
+
+}else if(money>300000){
+
+    tax=((money-300000)*(0.1))+7500;
+
+}else if(money>500000){
+
+    tax=((money-500000)*(0.15))+27500;
+
+}else if(money>750000){
+    
+    tax=((money-750000)*(0.2))+65000;
+
+}else if(money>1000000){
+
+    tax=((money-1000000)*(0.25))+115000;
+
 }
-else if(score>=50){
-    grade = 'D';
+else if(money>2000000){
+
+    tax=((money-2000000)*(0.3))+365000;
+
+}
+else if(money>5000000){
+
+    tax=((money-5000000)*(0.35))+1265000;
+    
 }else{
-    grade='F';
+    'free bro';
 }
-console.log(grade+' '+score);
+console.log(tax);
